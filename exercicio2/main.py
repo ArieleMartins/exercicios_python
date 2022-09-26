@@ -1,4 +1,4 @@
-import requests
+
 '''
 valor = input("Digite algo: ")
 primitivo = type(valor)
@@ -77,4 +77,4 @@ else:
     print('Por favor digite um numero')
 '''
 
-moedas = requests.get()
+
