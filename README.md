@@ -1,2 +1,2 @@
-# exercicios_python
-Exercicios - Estudando e Praticando Python
+#  Exercicios Python
+<p>Alguns dos exercicios que fiz durante o estudo de python</p>
