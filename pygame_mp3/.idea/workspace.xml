@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1130dd6b-32b0-475d-a2e8-c42388c7fa77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Exercicios/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api_moedas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api_moedas/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercicio2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marília Mendonça - Supera (Ao Vivo).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_moedas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_moedas/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_moedas/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_moedas/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_moedas/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_moedas/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_moedas/.idea/api_moedas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_moedas/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api_moedas/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercicio2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../exercicio2/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FMdKK0EpuOoZNOTdhOf4GnPd3m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1130dd6b-32b0-475d-a2e8-c42388c7fa77" name="Changes" comment="" />
+      <created>1664305821476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664305821476</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
