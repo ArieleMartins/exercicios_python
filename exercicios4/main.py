@@ -1,5 +1,4 @@
 #EMPRESTIMO
-
 '''
 
 print('\033[1:35m*=*\033[m' * 20)
@@ -22,13 +21,11 @@ else:
     if porcentoSalario > 30:
         print('Você não poderá fazer o emprestimos, pois passa de 30% do seu salario. Porcento: {}'.format(porcentoSalario))
     else:
-        print('PARABÉNS!!! SEU EMPRESTIMO FOI ACEITO. Porcento: {}'.format(porcentoSalario))
-
-
+        print('PARABÉNS!!! SEU EMPRESTIMO FOI ACEITO. Porcento: {:.2}'.format(porcentoSalario))
 
 '''
 
-'''
+#CONVERSAO - BINARIO, OCTAL, HEXADECIMAL
 
 numero = input('Digite um numero: ')
 
@@ -36,9 +33,25 @@ while numero.isnumeric() == False:
     print('Por favor digite um numero')
     numero = input('Digite um numero: ')
 else:
+    print('Escolha uma das bases para conversão:')
+    print('[1] converter para BINARIO')
+    print('[2] converter para OCTAL')
+    print('[3] converter para HEXADECIMAL')
+    opcao = input('Sua Opção: ')
     
-
-'''
+    while opcao != '1' and opcao != '2' and opcao != '3':
+        print('Por favor escolha uma das opções acima')
+        print('[1] converter para BINARIO')
+        print('[2] converter para OCTAL')
+        print('[3] converter para HEXADECIMAL')
+        opcao = input('Sua Opção: ')
+    else:
+        if opcao == '1':
+            print('{} convertido para BINARIO é igual a {}'.format(numero, bin(int(numero))[2:]))
+        elif opcao == '2':
+            print('{} convertido para OCTAL é igual a {}'.format(numero, oct(int(numero))[2:]))
+        else:
+            print('{} convertido para HEXADECIMAL é igual a {}'.format(numero, hex(int(numero))[2:]))
 
 #MAIOR E MENOR
 
