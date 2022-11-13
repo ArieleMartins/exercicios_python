@@ -195,5 +195,72 @@ else:
 
 '''
 
+#JOKENPÔ
 
+'''
+
+import random
+
+player = ''
+bot = random.randint(0, 2)
+ganhador = ''
+
+def printJogadas():
+    print('0 - Tesoura')
+    print('1 - Papel')
+    print('2 - Pedra')
+
+def identJogada(jogada):
+    jog = ["Tesoura", 'Papel', 'Pedra']
+    return jog[jogada]
+def Jogar():
+    verifGanhador = False
+    jogadas = [
+        ['0', '1', "PLAYER"],
+        ["1", "0", 'MÁQUINA'],
+        ['0', '2', 'MÁQUINA'],
+        ['2', '0', 'PLAYER'],
+        ['1', '2', 'PLAYER'],
+        ['2', '1', 'MÁQUINA']
+    ]
+
+    for i in range(len(jogadas)):
+        if jogadas[i][0] in player:
+            if jogadas[i][1] in str(bot):
+                verifGanhador = True
+                ganhador = jogadas[i][2]
+
+    if verifGanhador == True:
+        print('-=-' * 10)
+        print("\033[0:35mMÁQUINA:\033[m {}".format(identJogada(bot)))
+        print('\033[0:34mPLAYER:\033[m {}'.format(identJogada(int(player))))
+        print('-=-'* 10)
+        print('\033[0:32mGANHADOR É {}\033[m '.format(ganhador))
+        print('-=-' * 10)
+    else:
+        print('-=-' * 10)
+        print("\033[0:35mMÁQUINA:\033[m {}".format(identJogada(bot)))
+        print('\033[0:34mPLAYER:\033[m {}'.format(identJogada(int(player))))
+        print('-=-' * 10)
+        print("\033[0:34mEMPATE\033[m")
+
+
+
+
+print("\033[0:35m-=-\033[m" * 10)
+print("{}JOKENPÔ{}".format(' ' * 11, ' ' * 11))
+print("\033[0:35m-=-\033[m" * 10)
+
+printJogadas()
+
+player = input('Digite sua jogada: ')
+
+while player != "0" and player != "1" and player != "2":
+    printJogadas()
+    print('\033[0:31mDigite um dos numeros acima\033[m')
+    player = input('Digite sua jogada: ')
+else:
+    Jogar()
+
+'''
 
