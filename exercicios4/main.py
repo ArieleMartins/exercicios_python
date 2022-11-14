@@ -27,6 +27,8 @@ else:
 
 #CONVERSAO - BINARIO, OCTAL, HEXADECIMAL
 
+'''
+
 numero = input('Digite um numero: ')
 
 while numero.isnumeric() == False:
@@ -52,6 +54,8 @@ else:
             print('{} convertido para OCTAL é igual a {}'.format(numero, oct(int(numero))[2:]))
         else:
             print('{} convertido para HEXADECIMAL é igual a {}'.format(numero, hex(int(numero))[2:]))
+
+'''
 
 #MAIOR E MENOR
 
@@ -277,3 +281,46 @@ else:
 
 '''
 
+#GERENCIADOR DE PAGAMENTO
+
+preco = input('Digite o valor do produto: R$ ')
+while preco.isnumeric() == False:
+    print('Por favor digite somente numeros')
+    preco = input("Digite o valor do produto: R$ ")
+else:
+    print('''
+    Qual será o modo de pagamento:
+    [1] Dinheiro/Cheque
+    [2] Cartão Á Vista
+    [3] Parcelado 2x
+    [4] Parcelado 3x ou mais
+    ''')
+    escolha = input('Sua escolha: ')
+    while escolha != '1' and escolha != '2' and escolha != '3' and escolha != '4':
+        print('Por favor digite uma das opcoes abaixo')
+        print('''
+            Qual será o modo de pagamento:
+            [1] Dinheiro/Cheque
+            [2] Cartão Á Vista
+            [3] Parcelado 2x
+            [4] Parcelado 3x ou mais
+            ''')
+        escolha = input('Sua escolha: ')
+    else:
+        if escolha == '1':
+            valor = float(preco) - ((float(preco) * 10) / 100)
+            print("O valor final da sua compra é {}".format(valor))
+        elif escolha == '2':
+            valor = float(preco) - ((float(preco) * 5) / 100)
+            print("O valor final da sua compra é {}".format(valor))
+        elif escolha == '3':
+            valor = float(preco) / 2
+            print("O valor final da sua compra é {} dividido em 2x".format(valor))
+        else:
+            parcela = input('Digite em quantas vezes deseja parcelar: ')
+            while parcela.isnumeric() == False:
+                print("Por favor digite somente numeros")
+                parcela = input('Digite em quantas vezes deseja parcelar: ')
+            else:
+                valor = (float(preco) / int(parcela)) + ((float(preco) * 20) / 100)
+                print("O valor final da sua compra é {} com 20% de juros".format(valor))
