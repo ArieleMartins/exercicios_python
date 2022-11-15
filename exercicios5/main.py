@@ -71,6 +71,46 @@ print("A soma dos numero pares é {}".format(soma))
 
 '''
 
+#NUMERO PRIMO
+
+'''
+
+numero = input("Digite um numero: ")
+
+while numero.isnumeric() == False:
+    print('Por favor digite somente numeros ')
+    numero = input("Digite um numero: ")
+else:
+    if int(numero) % 1 == 0 and int(numero) % int(numero) == 0:
+        print('É um numero primo')
+    else:
+        print('Não é um numeor primo')
+
+'''
+
+#PALÍNDROMO
+
+'''
+
+frase = input('Digite uma frase: ')
+
+fraseSemEspaco = frase.replace(' ', '')
+
+novaFrase = ''
+
+for interval in range(len(fraseSemEspaco) - 1, -1, -1):
+    novaFrase += fraseSemEspaco[interval]
+
+if novaFrase == fraseSemEspaco:
+    print("É um PALINDROMO")
+else:
+    print("Não é um PALINDROMO")
+
+'''
+
+
+
+
 
 
 
