@@ -138,6 +138,30 @@ print('Tem {} maiores de idade e {} menores de idade'.format(maiores, menores))
 
 '''
 
+#MAIOR E MENOR PESO
+
+'''
+
+pesos = []
+
+for interval in range(1, 6):
+    peso = input('Digite o peso da {} pessoa: '.format(interval))
+    while peso.isnumeric() == False:
+        print('Por favor digite somente numeros')
+        peso = input('Digite o peso da {} pessoa: '.format(interval))
+    else:
+        pesos.append(float(peso))
+
+pesos.sort()
+
+maior = pesos[len(pesos) - 1]
+menor = pesos[0]
+
+print('O maior peso é {} e o menor é {}'.format(maior, menor))
+
+'''
+
+
 
 
 
