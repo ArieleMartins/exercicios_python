@@ -108,8 +108,35 @@ else:
 
 '''
 
+#MAIORES E MENORES DE IDADE
 
 
+'''
+
+import datetime
+
+ano = []
+maiores = 0
+menores = 0
+
+for interval  in range(1, 8):
+    nasc = input('Digite o ano de nascimento da {} pessoa: '.format(interval))
+
+    while nasc.isnumeric() == False:
+        print('Por favor digite somente numeros')
+        nasc = input('Digite o ano de nascimento da {} pessoa: '.format(interval))
+    else:
+        ano.append(int(nasc))
+
+for interv in range(0, len(ano)):
+    if (datetime.date.today().year - ano[interv]) >= 18:
+        maiores += 1
+    else:
+        menores += 1
+
+print('Tem {} maiores de idade e {} menores de idade'.format(maiores, menores))
+
+'''
 
 
 
