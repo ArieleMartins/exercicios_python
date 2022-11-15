@@ -162,9 +162,41 @@ print('O maior peso é {} e o menor é {}'.format(maior, menor))
 '''
 
 
+#MÉDIA E IDADE
 
+'''
 
+soma = 0
+velho = 0
+nomeVelho = ''
+novas = 0
+for interval in range(1, 5):
+    nome = input("Digite o nome da {} pessoa: ".format(interval))
+    idade = input("Digite a idade da {} pessoa: ".format(interval))
 
+    while idade.isnumeric() == False:
+        print("Por favor digite somente numeros: ")
+        idade = input("Digite a idade da {} pessoa: ".format(interval))
+    else:
+        sexo = input("Digite o sexo da {} pessoa: F ou M ".format(interval))
 
+        while sexo.upper() != "F" and sexo.upper() != "M":
+            print('Por favor digite F ou M')
+            sexo = input("Digite o sexo da {} pessoa: F ou M ".format(interval))
+        else:
+            soma += soma + int(idade)
+            if interval == 1 and sexo.upper() == "M":
+                velho = int(idade)
+                nomeVelho = nome
+            elif sexo.upper() == "M" and int(idade) > velho:
+                velho = int(idade)
+                nomeVelho = nome
+            if sexo.upper() == "F" and int(idade) < 20:
+                novas += 1
 
+media = soma / 4
+print("A idade media do grupo é {}".format(media))
+print("O homem mais velho tem {} e se chama {}".format(velho, nomeVelho))
+print("A quantidade de mulheres menos de 20 anos é {}".format(novas))
 
+'''
