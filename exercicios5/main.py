@@ -31,13 +31,20 @@ for interval in range(1, 50):
 
 #NUMERO IMPARES MULTIPLOS DE TRES
 
+
 '''
 
-for interval in range(1, 500):
+soma = 0
+
+for interval in range(1, 501, 2):
     if interval % 3 == 0:
-        print(interval)
+        soma = soma + interval
+print('A soma de todos os numero impare é {}'.format(soma))
 
 '''
+
+
+
 
 #TABUADA
 
@@ -198,5 +205,17 @@ media = soma / 4
 print("A idade media do grupo é {}".format(media))
 print("O homem mais velho tem {} e se chama {}".format(velho, nomeVelho))
 print("A quantidade de mulheres menos de 20 anos é {}".format(novas))
+
+'''
+
+#PROGRESSÃO ARITMETICA
+
+'''
+
+primeiro = input('Digite o primeiro termo: ')
+razao = input('Digite a razao: ')
+decimo = int(primeiro) + (10 - 1) * int(razao)
+for interval in range(int(primeiro), int(decimo) + int(razao), int(razao)):
+    print("{}".format(interval))
 
 '''
