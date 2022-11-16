@@ -85,6 +85,29 @@ while opcao != '5':
 '''
 
 
+# FATORIA
+
+'''
+
+num = input('Digite um numero: ')
+
+mult = 1
+
+while num.isnumeric() == False:
+    print('Por favor digite somente numeros')
+    num = input('Digite um numero: ')
+else:
+    contador = int(num)
+    while contador != 0:
+        mult = mult * contador
+        contador -= 1
+    else:
+        print('O valor fatorial do numero é {}'.format(mult))
+
+'''
+
+
+
 
 
 
