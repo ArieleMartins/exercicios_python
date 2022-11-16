@@ -83,17 +83,24 @@ print("A soma dos numero pares é {}".format(soma))
 '''
 
 numero = input("Digite um numero: ")
-
+conta = 0
 while numero.isnumeric() == False:
     print('Por favor digite somente numeros ')
     numero = input("Digite um numero: ")
 else:
-    if int(numero) % 1 == 0 and int(numero) % int(numero) == 0:
-        print('É um numero primo')
-    else:
-        print('Não é um numeor primo')
+    for interval in range(1, int(numero) + 1):
+        if int(numero) % interval == 0:
+          conta += 1
+
+if conta == 2:
+    print('O numero é primo')
+else:
+    print("O numero não é primo")
 
 '''
+
+
+
 
 #PALÍNDROMO
 
