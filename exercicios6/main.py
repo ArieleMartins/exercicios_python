@@ -106,6 +106,24 @@ else:
 
 '''
 
+#PROGRESSÃO ARITMETICA
+
+'''
+
+primeiro = input('Digite o primeiro termo: ')
+razao = input('Digite a razao: ')
+decimo = int(primeiro) + (10 - 1) * int(razao)
+for interval in range(int(primeiro), int(decimo) + int(razao), int(razao)):
+    print("{}".format(interval))
+print('===' * 10)
+pula = int(primeiro)
+while pula <= decimo:
+    print(pula)
+    pula = pula + int(razao)
+
+'''
+
+
 
 
 
