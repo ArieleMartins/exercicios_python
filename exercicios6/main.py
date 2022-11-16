@@ -123,6 +123,61 @@ while pula <= decimo:
 
 '''
 
+#FIBONACCI
+
+
+
+#SOMA
+'''
+
+soma = 0
+contador = 0
+numero = input('Digite um numero: Digite 999 para parar o programa ')
+while numero.isnumeric() == False:
+    print('Por favor digite somente numeros')
+    numero = input('Digite um numero: Digite 999 para parar o programa ')
+else:
+    while int(numero) != 999:
+        if numero != '999':
+            soma += int(numero)
+            contador += 1
+        numero = input('Digite um numero: Digite 999 para parar o programa ')
+
+    print("Você digitou {} numero e a soma entre ele é {}".format(contador, soma))
+
+'''
+
+#MEDIA, MAIOR E MENOR
+
+'''
+
+numero = input("digite um numero: Digite [P] para parar ")
+soma = 0
+media = 0
+contador = 0
+maior = 0
+while numero.isnumeric() == False:
+    print('Por favor digite somente numeros')
+    numero = input("digite um numero: Digite [P] para parar ")
+else:
+    while numero.upper() != "P":
+        soma += int(numero)
+        contador += 1
+        if contador == 1:
+            maior = int(numero)
+        elif maior > int(numero):
+            menor = int(numero)
+        else:
+            maior = int(numero)
+        numero = input("digite um numero: Digite [P] para parar ")
+
+media = soma / contador
+print('Você digitou {} numero e a media entre eles é {:.2f}'.format(contador, media))
+print('O maior entre eles é {}'.format(maior))
+print('O menor entre eles é {}'.format(menor))
+
+'''
+
 
 
 
