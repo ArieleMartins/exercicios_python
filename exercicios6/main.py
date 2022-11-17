@@ -123,6 +123,32 @@ while pula <= decimo:
 
 '''
 
+#PROGRESSAO ARITMETICA SUPER
+
+'''
+
+primeiro = input('Digite o primeiro termo: ')
+razao = input('Digite a razao: ')
+decimo = int(primeiro) + (10 - 1) * int(razao)
+print('===' * 10)
+termo = int(primeiro)
+pula = 1
+total = 0
+mais = 10
+while int(mais) != 0:
+    total = total + int(mais)
+    while pula <= total:
+        print(termo)
+        termo += int(razao)
+        pula += 1
+    print('PAUSA')
+    mais = input('Quantos termos voce quer mostrar mais? ')
+print('Mostro {} termos'.format(pula))
+
+'''
+
+
+
 #FIBONACCI
 
 
