@@ -151,7 +151,27 @@ print('Mostro {} termos'.format(pula))
 
 #FIBONACCI
 
+'''
 
+termo = input('Quantos termos deseja mostrar: ')
+
+while termo.isnumeric() == False:
+    print('Digite somente numeros')
+    termo = input('Quantos termos deseja mostrar: ')
+else:
+    t1 = 0
+    t2 = 1
+    cont = 3
+    print('{}  {}  '.format(t1, t2), end="")
+    while cont <= int(termo):
+        t3 = t1 + t2
+        print('{}  '.format(t3), end="")
+        t1 = t2
+        t2 = t3
+        cont += 1
+print('Fim')
+
+'''
 
 #SOMA
 '''
