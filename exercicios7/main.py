@@ -76,3 +76,40 @@ while int(number) != '0':
 print('Você perdeu')
 
 '''
+
+
+'''
+
+totalMaior = 0
+totalMulherMenor = 0
+totalHomem = 0
+opcao = 'S'
+
+
+while True:
+    idade = input('Digite a idade: ')
+    while idade.isnumeric() == False:
+        print('Por favor digite somente números')
+        idade = input('Digite a idade: ')
+    else:
+        sexo = input('Digite o sexo: ')
+        while sexo.upper() != 'F' and sexo.upper() != "M":
+            print('Por favor digite F ou M')
+            sexo = input('Digite o sexo: [F/M]')
+        else:
+            if int(idade) >= 18:
+                totalMaior += 1
+            elif int(idade) < 18:
+                if sexo.upper() == "F":
+                    totalMulherMenor += 1
+            if sexo.upper() == 'M':
+                totalHomem += 1
+    opcao = input('Você deseja continuar? [S para continuar]')
+    if opcao.upper() != "S":
+        break
+print(f'Maiores de idade: {totalMaior}')
+print(f'Homens: {totalHomem}')
+print(f'Mulheres menores: {totalMulherMenor}')
+
+'''
+
