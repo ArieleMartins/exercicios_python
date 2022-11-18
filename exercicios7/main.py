@@ -113,3 +113,38 @@ print(f'Mulheres menores: {totalMulherMenor}')
 
 '''
 
+'''
+
+totalGasto = 0
+caro = 0
+maisBarato = 0
+nomeBarato = ''
+count = 0
+while True:
+    produto = input("Digite o nome do produto: ")
+    valor = input('Digite o valor do produto: ')
+    while valor.replace('.', '').isnumeric() == False:
+        print('Por favor digite somente numeros')
+        valor = input('Digite o valor do produto: ')
+    else:
+        totalGasto += float(valor.replace(',', '.'))
+        if float(valor.replace(',', '.')) > 1000:
+            caro += 1
+        if count == 0:
+            maisBarato = float(valor.replace(',', '.'))
+            nomeBarato = produto
+        elif maisBarato > float(valor.replace(',', '.')):
+            maisBarato = float(valor.replace(',', '.'))
+            nomeBarato = produto
+        count += 1
+    opcao = input('Deseja continuar? [S/N]')
+    while opcao.upper() != "S" and opcao.upper() != "N":
+        opcao = input('Deseja continuar? [S/N]')
+    else:
+        if opcao.upper() == 'N':
+            break
+print(f'Total Gasto: {totalGasto}')
+print(f'Quantidade de produtos que custam mais de 1000: {caro}')
+print(f'Produto mais barato: {nomeBarato}')
+
+'''
