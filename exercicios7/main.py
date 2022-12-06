@@ -69,9 +69,12 @@ while int(number) != '0':
                 if option.upper() == 'P':
                     print('Você ganhou')
                 else:
-                    print('A máquina ganhou')
-            else:
-                break
+                    break;
+            elif sum % 2 != 0:
+                if option.upper() == 'I':
+                    print('Você ganhou')
+                else:
+                    break;
 
 print('Você perdeu')
 
@@ -146,5 +149,45 @@ while True:
 print(f'Total Gasto: {totalGasto}')
 print(f'Quantidade de produtos que custam mais de 1000: {caro}')
 print(f'Produto mais barato: {nomeBarato}')
+
+'''
+
+# CAIXA ELETRONICO
+
+'''
+
+print('=' * 30)
+print('{:^30}'.format('BANCO CEV'))
+print("=" * 30)
+
+ced = 100
+
+valor = input('Que valor você deseja sacar?')
+
+while valor.isnumeric() == False:
+    valor = input('Que valor você deseja sacar?')
+else:
+    totalCed = 0
+    total = int(valor)
+    while True:
+        if total >= ced:
+            total -= ced
+            totalCed += 1
+        else:
+            print(f'Total de cedulas: {totalCed} de {ced}')
+            if ced == 100:
+                totalCed = 0
+                ced = 50
+            elif ced == 50:
+                totalCed = 0
+                ced = 20
+            elif ced == 20:
+                totalCed = 0
+                ced = 10
+            elif ced == 10:
+                totalCed = 0
+                ced = 1
+            if total == 0:
+                break
 
 '''
